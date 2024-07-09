@@ -1,38 +1,104 @@
 .App {
   text-align: center;
+  display: flex;
+  background-color: #ECEAEA;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.creds_div{
+  width: 100%;
+  height: 80%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+
+}
+
+.options{
+  width: 100%;
+  height: 15%;
+}
+.op1{
+  /* background-color: #F4D93B; */
+  width: 50%;
   color: white;
+  border: none;
+  height: 100%;
+  font-size: 20px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+input{
+  width: 90%;
+  height: 34px;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  color: #ECEAEA;
+  font-size: 18px;
+  background-color: transparent;
+
+  border-bottom: solid 2px  #F4D93B;
+}
+.a{
+  box-shadow: rgba(0, 0, 0, 0.25) -2px -4px 7px 2px inset  ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+*{
+  overflow: hidden;
+}
+
+.creds{
+  border-radius: 5px;
+  background-color: #185685;
+  height: 45vh;
+  width: 40vw;
+}
+
+input::placeholder{
+  color: rgba(245, 222, 179, 0.568);
+}
+.creds_img{
+  width: fit-content;
+  height: 2.5vw;
+}
+
+.op1_b{
+  background-color: #F4D93B !important;
+  width: 90%;
+  height: 40px;
+  transition-duration: 200ms;
+  border-radius: 5px;
+  box-shadow: 2px 2px 0.5px black;
+}
+
+.op1_b:hover{
+  transform: translateY(-5px);
+}
+
+button{
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .creds{
+    width: 90%;
+    height: 50%;
+    border-radius: 7px;
   }
-  to {
-    transform: rotate(360deg);
+  .App{
+    height: 110vh;
+    overflow-y: scroll !important;
+  }
+  .creds_img{
+    margin: 10px;
+    width: 50vw;
+    height: fit-content;
   }
 }
