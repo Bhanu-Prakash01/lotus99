@@ -4,6 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      
        <div className='creds'>
             <div className="options">
                <button className='op1 a' style={{"backgroundColor":"#F4D93B" ,"color":"black"}}> SignUp</button>
